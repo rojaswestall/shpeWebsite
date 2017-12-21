@@ -1,2 +1,2 @@
 # shpeWebsite
-Website for the Northwestern SHPE Chapter
+Website for the Northwestern SHPE Chapter!
