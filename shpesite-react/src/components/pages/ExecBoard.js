@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import { Link } from 'react-router-dom';
-import { Header, Grid, Image, Segment, Divider } from 'semantic-ui-react'
-import shpeCrest from '../../assets/images/shpeNUcrest.png';
+import { Header, Grid, Image, Divider } from 'semantic-ui-react';
+// import { Mailto } from 'react-mailto';
 import kelly from '../../assets/images/kelly.png';
 import susan from '../../assets/images/susan.png';
 import jacqueline from '../../assets/images/jacqueline.png';
@@ -13,6 +13,9 @@ import alex from '../../assets/images/alex.png';
 import andie from '../../assets/images/andie.png';
 import zeke from '../../assets/images/zeke.png';
 
+// <Mailto email="rojaswestall@u.northwestern.edu" obfuscate={true}>
+//   emailme!
+// </Mailto>
 
 const ExecBoard = () => (
   // https://react.semantic-ui.com/collections/grid#grid-example-text-alignment-center
@@ -102,6 +105,7 @@ const ExecBoard = () => (
         </Header>
         <Header as='h3' textAlign='center'>
           Tech Chair and Web Master
+
         </Header>
         <Divider />
       </Grid.Column>

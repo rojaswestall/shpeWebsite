@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import createHistory from 'history/createBrowserHistory';
 import LoginPage from './LoginPage';
 import NorthwesternShpe from './NorthwesternShpe';
 import ExecBoard from './ExecBoard';
+
+const history = createHistory();
 
 export default class Navigator extends Component {
   constructor () {
@@ -13,13 +16,13 @@ export default class Navigator extends Component {
     switch(page) {
       case 'Northwestern SHPE':
         return <NorthwesternShpe />;
-      case 'SHPE Jr':
+      case 'Outreach':
         return <NorthwesternShpe />;
       case 'NU Members':
-        return <LoginPage />;
+        return <LoginPage history={ history }/>;
       case 'Executive Board':
         return <ExecBoard />;
-      case 'NU Latino Community':
+      case 'NU Latinx Community':
         return <NorthwesternShpe />;
       case 'Connect':
         return <NorthwesternShpe />;
