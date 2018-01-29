@@ -10,12 +10,10 @@ export default class HomePage extends React.Component {
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
-    console.log(this.state.activeItem);
   }
 
   render() {
     const { activeItem } = this.state;
-
       return (
         <div>
           <Image src={shpeCrest} size='medium' centered />
@@ -36,5 +34,4 @@ export default class HomePage extends React.Component {
         </div>
       )
   }
-
 }

@@ -28,8 +28,6 @@ export default class Navigator extends Component {
     }
   }
 
-
-
   render () {
     return (
       <div>
