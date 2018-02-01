@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import { Menu, Grid, Divider, Image } from 'semantic-ui-react'
+import { Menu, Grid, Divider, Image, Container } from 'semantic-ui-react'
 import Navigator from './Navigator';
 import shpeCrest from '../../assets/images/shpeNUcrest.png';
+import Footer from '../Footer';
 
 export default class HomePage extends React.Component {
 
@@ -15,7 +16,7 @@ export default class HomePage extends React.Component {
   render() {
     const { activeItem } = this.state;
       return (
-        <div>
+        <Container>
           <Image src={shpeCrest} size='medium' centered />
           <Divider hidden/>
           <Grid centered>
@@ -31,7 +32,10 @@ export default class HomePage extends React.Component {
           <Divider hidden/>
           <Divider hidden/>
           <Navigator page={ activeItem } />
-        </div>
+          <Divider hidden/>
+          <Divider hidden/>
+        </Container>
+
       )
   }
 }
